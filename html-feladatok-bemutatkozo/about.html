@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
@@ -12,7 +13,58 @@
       <nav id="top"></nav>
     </header>
     <main>
-      <section></section>
+      <section>
+        <div class="row" id="about-row">
+          <img id="profile-img" src="./img/profile.jpg" alt="profile picture" />
+          <div>
+            <p id="about-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              in ante nec urna imperdiet dignissim. Etiam eu lacus tortor.
+              Pellentesque varius ex aliquam, mattis est eu, fermentum dui.
+              Mauris porttitor condimentum elit, sed porttitor ligula. In mattis
+              quis sapien nec varius. Maecenas malesuada nisl nec odio rhoncus
+              sagittis. Morbi et lobortis massa. Nunc sit amet nunc vel felis
+              ornare ornare ut eu neque. Aliquam accumsan fringilla lectus
+              vulputate suscipit. Ut rhoncus nisi diam. Aenean lacus mauris,
+              aliquet a ornare vel, euismod at lectus. Etiam ligula urna,
+              porttitor vel magna eu, semper mattis dolor.
+            </p>
+            <ul>
+              <li>Pellentesque habitant</li>
+              <li>Ut sodales scelerisque</li>
+              <li>Vestibulum orci lacus</li>
+            </ul>
+            <ol>
+              <li>Nunc suscipit facilisis ipsum</li>
+              <li>Donec sit amet maximus tortor.</li>
+              <li>Nullam ante massa, mollis bibendum ornare</li>
+            </ol>
+          </div>
+        </div>
+        <form action="">
+          <label for="name">Name:</label>
+          <input
+            min="5"
+            required
+            type="text"
+            id="name"
+            name="name"
+          /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br /><br />
+          <label for="message">Message</label>
+
+          <textarea
+            id="message"
+            name="message"
+            minlength="20"
+            rows="4"
+            cols="50"
+          >
+          </textarea>
+          <input type="submit" value="send" />
+        </form>
+      </section>
     </main>
 
     <footer>

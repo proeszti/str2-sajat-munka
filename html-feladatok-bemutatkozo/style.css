@@ -23,3 +23,11 @@ p {
     margin: 5px 0px;
   }
 }
+
+#profile-img {
+  object-fit: contain;
+  max-width: 25%;
+}
+#about-p {
+  margin-left: 10px;
+}
