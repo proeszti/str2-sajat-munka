@@ -4,3 +4,22 @@
 p {
   margin: 0cm;
 }
+
+.gallery-img {
+  width: 33%;
+  height: 600px;
+  object-fit: cover;
+  margin: 10px;
+  box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (max-width: 800px) {
+  .gallery-row {
+    flex-direction: column;
+  }
+
+  .gallery-img {
+    width: 100%;
+    margin: 5px 0px;
+  }
+}
