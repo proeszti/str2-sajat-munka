@@ -57,9 +57,9 @@
   justify-content: space-between;
 }
 .main__card {
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-  padding: 25px 80px 75px;
+  border-radius: 0.25rem;
+
+  padding: 25px 80px 55px;
 }
 main {
   display: flex;
@@ -69,4 +69,5 @@ main {
   background-color: rgba(218, 222, 226, 0.945);
   border-radius: 5px;
   padding: 0px 10px 10px 0px;
+  margin-bottom: 30px;
 }
