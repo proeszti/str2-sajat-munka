@@ -8,7 +8,6 @@
 .header__title {
   display: inline;
   font-size: 1.25rem;
-  padding-top: 15px;
 }
 .header__search {
   display: inline;
@@ -16,7 +15,6 @@
   border-bottom-left-radius: 4px;
   padding: 0.375rem 0.75rem;
   font-size: 1.2rem;
-  height: 50px;
 }
 .header__search:focus {
   border-color: rgb(128, 189, 255);
@@ -38,6 +36,11 @@
   /* height: 100%; */
 }
 .card__top {
+  border-bottom: 1px solid rgb(68, 67, 67);
+  padding: 0rem 1rem;
+}
+.card__bottom {
+  padding: 0rem 1rem;
 }
 .card--blue {
   background-color: rgb(0, 123, 255);
@@ -60,7 +63,6 @@
   border-radius: 0.25rem;
   margin: 1rem;
   width: 100%;
-  padding: 0rem 1rem;
 }
 main {
   display: flex;
@@ -69,8 +71,11 @@ main {
 .main__breadcrumb {
   background-color: rgba(218, 222, 226, 0.945);
   border-radius: 5px;
-  padding: 0px 10px 10px 0px;
+  padding-left: 1rem;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  color: rgb(99, 94, 94);
 }
 
 body {
@@ -99,4 +104,16 @@ body {
 }
 .upper {
   text-transform: uppercase;
+}
+.horizontal-text {
+  display: flex;
+  align-items: center;
+}
+
+h3 {
+  margin: 0px;
+  padding: 0px;
+}
+.fa.fa-bars {
+  margin-left: 4rem;
 }
