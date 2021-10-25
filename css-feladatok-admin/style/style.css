@@ -41,6 +41,9 @@
 }
 .card__bottom {
   padding: 0rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .card--blue {
   background-color: rgb(0, 123, 255);
@@ -116,4 +119,11 @@ h3 {
 }
 .fa.fa-bars {
   margin-left: 4rem;
+}
+.li-separate {
+  display: flex;
+  justify-content: space-between;
+}
+.fa.fa-angle-right {
+  margin-right: 1rem;
 }
