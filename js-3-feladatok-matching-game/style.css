@@ -1,0 +1,19 @@
+.jatekter {
+  size: 2000px;
+}
+.elso-sor {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+.kartya {
+  padding: 20px;
+  color: aquamarine;
+  background-color: red;
+  margin: 10px;
+}
+.sor-ketto {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
