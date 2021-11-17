@@ -1,21 +1,14 @@
 .jatekter {
-  
 }
 .elso-sor {
-  /* display: flex;
+  display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; */
-}
-/* .kartya {
-  padding: 20px;
-  color: aquamarine;
-  background-color: red;
-  margin: 10px; */
+  flex-wrap: wrap;
 }
 .sor-ketto {
-  /* display: flex;
+  display: flex;
   justify-content: space-between;
-  flex-direction: row; */
+  flex-direction: row;
 }
 .flip-card {
   /* display: flex;
@@ -38,7 +31,8 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card.flipped .flip-card-inner,
+.flip-card.found .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -59,7 +53,11 @@
 }
 
 .flip-card-back {
-  background-color: #2980b9;
-  color: white;
+  /* background-color: #2980b9; */
+  /* color: white; */
   transform: rotateY(180deg);
+}
+.fa .fa-grav {
+  color: rgb(207, 29, 139);
+  background-color: blueviolet;
 }
