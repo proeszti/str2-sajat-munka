@@ -53,9 +53,7 @@ const start = () => {
             const numberOfFound = document.querySelectorAll(".found").length;
 
             if (timerInterval === null) {
-                timerInterval = setInterval(() => {
-                    timer.innerHTML = parseInt(timer.innerHTML) + 1;
-                }, 1000);
+                timerInterval = setInterval(handleTime, 1000);
             }
             else if (numberOfFound === 10) {
                 clearInterval(timerInterval);
@@ -67,6 +65,18 @@ const start = () => {
 
 };
 
+const handleTime = () => {
 
+    const minutesAndSeconds = timer.innerHTML.split(":");
+    const minutes = parseInt(minutesAndSeconds[0]);
+    const seconds = parseInt(minutesAndSeconds[1]);
+
+    const newMinutes = minutes + parseInt((seconds / 60));
+    const newMinutesString = newMinutes < 10 ? "0" + newMinutes.toString() : newMinutes.toString();
+    const newSeconds = (seconds % 60) + 1;
+    const newSecondsString = newSeconds < 10 ? "0" + newSeconds.toString() : newSeconds.toString();
+
+    timer.innerHTML = newMinutesString + ":" + newSecondsString;
+};
 
 start();
